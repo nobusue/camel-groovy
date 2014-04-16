@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'org.codehaus.groovy:groovy-all:2.2.2'
+  compile 'org.apache.camel:camel-core:2.13.0'
+  compile 'org.slf4j:slf4j-simple:1.7.6'
+}
+
+mainClassName = "example.JdkTimer"
+
